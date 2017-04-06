@@ -17,6 +17,7 @@ exer2('Vasia', 19)
 
 print('-----------------------------')
 
+#counter number fibonacci
 def fibo(n):
     first = 0
     second = 1
