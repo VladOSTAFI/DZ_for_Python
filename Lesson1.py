@@ -52,4 +52,31 @@ list_of_word = ['HellO', 'world', 1, True, 1.5, 'ipsum', 'dolor', 2.2, 'set', 'a
 print(exer4(list_of_word))
 
 
+print('-----------------------------')
+
+
+arrOfVersion = []
+
+def sortVersion(arrVers):
+    arrVers.sort()
+    return arrVers
+
+
+def splitVersion(vers):
+    splitVers = vers.split('.')
+    arrOfVersion.append(splitVers)
+    return sortVersion(arrOfVersion)
+
+
+
+a = '1.5.2.3.5'
+b = '1.5.2.3.6'
+c = '2.4.1.2'
+d = '1.0'
+
+splitVersion(a)
+splitVersion(b)
+splitVersion(c)
+print(splitVersion(d))
+
 
